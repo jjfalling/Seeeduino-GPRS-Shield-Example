@@ -5,7 +5,8 @@
 //GPRS Shield is connected to the Software UART 
 
 
-//NOTE: this is a modified version that will turn on the modem if its off 
+//NOTE: this is a modified version of the pass through example that will turn the 
+// modem on if its off.
  
 
 #include <SoftwareSerial.h>
@@ -35,7 +36,7 @@ void setup()
     if (GPRS.available())              // if date is comming from softwareserial port ==> data is comming from gprs shield
     {
       
-    
+      //we got a response, so assume the device is on
       Serial.println("Device ready");
       devReady = true;
     
