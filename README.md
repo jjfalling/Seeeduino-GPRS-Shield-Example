@@ -1,2 +1,0 @@
-Seeeduino-GPRS-Shield-Example
-=============================
